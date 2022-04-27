@@ -1,0 +1,30 @@
+http request/ response:
+
+Header body
+
+
+HTTP METHODS:
+1. GET    //  TO GET DATA
+2. POST  // WRITE DATA 
+3. PUT   // UPDATE DATA
+4. DELETE   // DELETE DATA
+
+http response codes
+1. 1xx
+2. 2xx
+3. 3xx
+4. 4xx
+5. 5xx
+
+
+{
+    "rank": 2,
+    "fname": "xyz",
+}
+
+
+Problem:
+
+1. read text in file1.text
+2. call API:https://www.breakingbadapi.com/api/characters?name=Walter
+3. write in file nickname.txt: response[0].nickname
