@@ -35,7 +35,6 @@ app.patch("/users/:id",(req,res)=>{     //update data
         return user;
     })
 
-    console.log("~ updateData", updateData)
     writeFile("users.json", JSON.stringify(updateData),(err)=>{
         if(err) console.log(err)
     });
