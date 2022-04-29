@@ -58,7 +58,7 @@ const updateFile = async ()=>{
     try{
         const file1Text = await readFileProm("fie1.txt");
         const resp = await superagent.get(`https://www.breakingbadapi.com/api/characters?name=${file1Text}`)
-        const writeText= await writeFileProm("nickname.txt", resp._body[0].nickname)
+        const writeText= await writeFileProm("nickname.txt",'utf-8', resp._body[0].nickname)
     } catch(err) {
         console.log("error: ", err)
     }
